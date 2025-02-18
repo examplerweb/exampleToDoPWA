@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas PWA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="pwaFiles/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="pwaFiles/manifest.json">
+</head>
+<body>
+  <h1>Lista de Tareas PWA</h1>
+  <div id="task-list"></div>
+  <input type="text" id="task-input" placeholder="Nueva tarea">
+  <button id="add-task-btn">Agregar tarea</button>
+
+  <!-- Popup de instalación -->
+  <div id="install-popup" style="display: none; position: fixed; bottom: 20px; left: 20px; background: #fff; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border-radius: 5px; z-index: 1000;">
+    <p>¡Instala nuestra app para usarla offline!</p>
+    <button id="install-button">Instalar</button>
+  </div>
+
+  <!-- Botón para probar las notificaciones push -->
+<button id="push-notification-btn" style="display: none;">Probar Notificación Push</button>
+
+
+<button id="push-notification-btn">Probar Notificación Push 2</button>
+
+
+
+  <script src="pwaFiles/functionsIndexedDB.js"></script>
+  <script src="pwaFiles/install.js"></script> <!-- Script para el manejo de instalación -->
+</body>
+</html>

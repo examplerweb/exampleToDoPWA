@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2e003e; /* Fondo oscuro morado */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Efectos de texto neón */
+  h1 {
+    font-size: 2.5rem;
+    color: #00f7ff; /* Cyan */
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+  }
+  
+  /* Estilos para el input y botón */
+  .task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e003e;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 0 10px #f700ff; /* Magenta */
+  }
+  
+  #task-input:focus {
+    box-shadow: 0 0 10px #f700ff, 0 0 20px #f700ff;
+  }
+  
+  #add-task-btn {
+    padding: 10px 20px;
+    background-color: #f700ff; /* Magenta */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f700ff;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #ff00ea; /* Color de hover neón */
+  }
+  
+  /* Estilos para la lista de tareas */
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    background-color: #37004c; /* Morado oscuro */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 10px #ffdd00; /* Amarillo */
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item button {
+    background-color: transparent;
+    border: none;
+    color: #ffdd00; /* Amarillo */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .task-item button:hover {
+    color: #f700ff; /* Magenta */
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .task-input {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #task-input {
+      width: 80%;
+    }
+  }
+
+  
+ 
