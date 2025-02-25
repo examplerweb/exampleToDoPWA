@@ -1,8 +1,3 @@
-
-
-
-
-
 // Comprobar si el navegador soporta Service Workers y notificaciones
 if ('serviceWorker' in navigator && 'PushManager' in window) {
     // Registrar el Service Worker
@@ -25,26 +20,7 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
       }
     });
   
-    // Agregar evento para el botón de prueba de notificación push
-    const pushBtn = document.getElementById('push-notification-btn');
-    pushBtn.addEventListener('click', () => {
-      // Verificar si la API de notificaciones está disponible
-      if (Notification.permission === 'granted') {
-        // Crear una notificación push
-        if (navigator.serviceWorker) {
-          navigator.serviceWorker.ready.then((registration) => {
-            registration.showNotification('¡Notificación Push!', {
-              body: 'Esta es una prueba de notificación push.',
-              icon: 'pwaFiles/icon.png',  // Agregar un ícono para la notificación
-              badge: 'pwaFiles/badge.png'  // Agregar un ícono de badge (opcional)
-            });
-          });
-        }
-      } else {
-        alert('Por favor, permite las notificaciones para recibirlas.');
-      }
-    });
-  }
+  
   
 
   
