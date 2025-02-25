@@ -2,11 +2,11 @@ const cacheName = 'v1';
 
 const filesToCache = [
   '',  // Asegúrate de que la raíz esté correctamente configurada
-  'index.html',
-  'style.css',
-  'pwaFiles/service-worker.js',   // Asegúrate de que los archivos estén en la ruta correcta
-  'pwaFiles/functionsIndexedDB.js',
-  'pwaFiles/manifest.json'
+  '/exampleToDoPWA/index.html',
+  '/exampleToDoPWA/style.css',
+  '/exampleToDoPWA/pwaFiles/service-worker.js',   // Asegúrate de que los archivos estén en la ruta correcta
+  '/exampleToDoPWA/pwaFiles/functionsIndexedDB.js',
+  '/exampleToDoPWA/pwaFiles/manifest.json'
 ];
 
 // Instalar el service worker y cachear los archivos
