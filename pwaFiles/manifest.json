@@ -2,7 +2,7 @@
     "name": "Lista de Tareas PWA",
     "short_name": "Tareas",
     "description": "Una app de lista de tareas",
-    "start_url": "/",
+    "start_url": "/exampleToDoPWA/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
